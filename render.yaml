@@ -1,0 +1,10 @@
+# Despliegue estático en Render (sin paso de build).
+# Landing solo para campañas de Google Ads (149 €/mes + IVA). Noindex.
+# publishPath / staticPublishPath: '.' = la raíz de este directorio.
+services:
+  - type: web
+    name: secretaria-ia
+    runtime: static
+    buildCommand: ""
+    publishPath: .
+    staticPublishPath: .

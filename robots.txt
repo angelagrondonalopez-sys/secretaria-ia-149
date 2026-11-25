@@ -1,0 +1,4 @@
+# Landing solo para Google Ads: no debe indexarse.
+# El HTML lleva también <meta name="robots" content="noindex, follow">.
+User-agent: *
+Disallow: /
