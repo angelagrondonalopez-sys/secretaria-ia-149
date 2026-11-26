@@ -15,9 +15,9 @@
   var ENDPOINT_FORMULARIO = 'https://api.web3forms.com/submit';
   var WEB3FORMS_KEY = 'c9c65a74-b6ad-419a-87b5-67832e9e779d';
   var TELEFONO = '+34639792807';
-  var ADS_ID = 'AW-18578730589';
-  var ADS_CONV_FORM = 'pNXRCLrt7b8dEN3cg5tF';
-  var ADS_CONV_TEL = 'TGRDCL3t7b8dEN3cg5tF';
+  var ADS_ID = 'AW-18597096565';
+  var ADS_CONV_FORM = 'rk7NCKqV7L8dEPXY5KNF';
+  var ADS_CONV_TEL = 'H6OmCK2V7L8dEPXY5KNF';
 
   function digits(x) {
     return String(x || '').replace(/\D/g, '');
