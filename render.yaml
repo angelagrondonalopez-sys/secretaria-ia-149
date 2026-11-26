@@ -1,5 +1,5 @@
 # Despliegue estático en Render (sin paso de build).
-# Landing solo para campañas de Google Ads (149 €/mes + IVA). Noindex.
+# Landing solo para campañas de Google Ads (129 €/mes + IVA, antes 149 €). Noindex.
 # publishPath / staticPublishPath: '.' = la raíz de este directorio.
 services:
   - type: web
