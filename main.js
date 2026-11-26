@@ -5,8 +5,9 @@
  *   angelagrondonalopez@gmail.com (cuenta Web3Forms de Angela, clave pública).
  * - TELEFONO: número de contacto en formato internacional, p. ej. '+34639792807'.
  *   Vacío = se muestra «pendiente» y el botón Llamar lleva al formulario.
- * - ADS_ID / ADS_CONV_FORM / ADS_CONV_TEL: IDs de Google Ads cuando estén listos.
- *   Mientras estén vacíos no se dispara ninguna conversión.
+ * - ADS_ID / ADS_CONV_FORM / ADS_CONV_TEL: etiqueta de Google Ads y conversiones.
+ *   El gtag.js se carga en index.html (un solo snippet, sin duplicar aquí).
+ *   conv() envía send_to como ADS_ID + '/' + la etiqueta de conversión.
  */
 (function () {
   'use strict';
@@ -14,9 +15,9 @@
   var ENDPOINT_FORMULARIO = 'https://api.web3forms.com/submit';
   var WEB3FORMS_KEY = 'c9c65a74-b6ad-419a-87b5-67832e9e779d';
   var TELEFONO = '+34639792807';
-  var ADS_ID = '';
-  var ADS_CONV_FORM = '';
-  var ADS_CONV_TEL = '';
+  var ADS_ID = 'AW-18578730589';
+  var ADS_CONV_FORM = 'pNXRCLrt7b8dEN3cg5tF';
+  var ADS_CONV_TEL = 'TGRDCL3t7b8dEN3cg5tF';
 
   function digits(x) {
     return String(x || '').replace(/\D/g, '');
@@ -71,10 +72,15 @@
     });
   });
 
+  function sendTo(id) {
+    if (!id) return '';
+    if (id.indexOf('AW-') === 0) return id;
+    return ADS_ID ? (ADS_ID + '/' + id) : id;
+  }
   function conv(label) {
     if (typeof gtag !== 'function') return;
-    if (label === 'form' && ADS_CONV_FORM) gtag('event', 'conversion', { send_to: ADS_CONV_FORM });
-    if (label === 'tel' && ADS_CONV_TEL) gtag('event', 'conversion', { send_to: ADS_CONV_TEL });
+    if (label === 'form' && ADS_CONV_FORM) gtag('event', 'conversion', { send_to: sendTo(ADS_CONV_FORM) });
+    if (label === 'tel' && ADS_CONV_TEL) gtag('event', 'conversion', { send_to: sendTo(ADS_CONV_TEL) });
   }
 
   document.addEventListener('click', function (e) {
