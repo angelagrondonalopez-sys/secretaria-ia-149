@@ -78,13 +78,24 @@
         "description": "Prueba gratis de 1 semana configurada por nuestro equipo. Después 99 €/mes + IVA, sin permanencia y sin cuota de alta. Incluye 3 meses de gestión de campaña de Google Ads gratis (a activar dentro de los 6 primeros meses y mientras el cliente siga de alta). La inversión en anuncios la paga el cliente.",
         "price": "99",
         "priceCurrency": "EUR",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": "99",
-          "priceCurrency": "EUR",
-          "unitText": "MONTH",
-          "valueAddedTaxIncluded": false
-        },
+        "priceSpecification": [
+          {
+            "@type": "UnitPriceSpecification",
+            "priceType": "https://schema.org/ListPrice",
+            "price": "149",
+            "priceCurrency": "EUR",
+            "unitText": "MONTH",
+            "valueAddedTaxIncluded": false
+          },
+          {
+            "@type": "UnitPriceSpecification",
+            "priceType": "https://schema.org/SalePrice",
+            "price": "99",
+            "priceCurrency": "EUR",
+            "unitText": "MONTH",
+            "valueAddedTaxIncluded": false
+          }
+        ],
         "availability": "https://schema.org/InStock",
         "url": "https://secretaria-ia-149.onrender.com/#precio"
       }
@@ -104,13 +115,24 @@
         "description": "Prueba gratis de 1 semana configurada por nuestro equipo. Después 99 €/mes + IVA, sin permanencia y sin cuota de alta. Incluye 3 meses de gestión de campaña de Google Ads gratis (a activar dentro de los 6 primeros meses y mientras el cliente siga de alta). La inversión en anuncios la paga el cliente.",
         "price": "99",
         "priceCurrency": "EUR",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": "99",
-          "priceCurrency": "EUR",
-          "unitText": "MONTH",
-          "valueAddedTaxIncluded": false
-        },
+        "priceSpecification": [
+          {
+            "@type": "UnitPriceSpecification",
+            "priceType": "https://schema.org/ListPrice",
+            "price": "149",
+            "priceCurrency": "EUR",
+            "unitText": "MONTH",
+            "valueAddedTaxIncluded": false
+          },
+          {
+            "@type": "UnitPriceSpecification",
+            "priceType": "https://schema.org/SalePrice",
+            "price": "99",
+            "priceCurrency": "EUR",
+            "unitText": "MONTH",
+            "valueAddedTaxIncluded": false
+          }
+        ],
         "availability": "https://schema.org/InStock",
         "url": "https://secretaria-ia-149.onrender.com/#precio"
       }
@@ -218,9 +240,18 @@
         </div>
 
         <div class="price-hero">
-          <div class="ph-box"><span class="ph-pre">Después de la prueba</span><strong>99 €</strong><span>/mes + IVA</span></div>
+          <div class="ph-box">
+            <span class="ph-name">Secretaria virtual IA:</span>
+            <del class="ph-old"><span class="visually-hidden">antes </span>149 €</del>
+            <strong>99 €</strong><span>/mes + IVA</span>
+          </div>
+          <span class="deal-badge">1 semana de prueba gratis</span>
           <span class="deal-badge">Sin permanencia y sin cuota de alta</span>
-          <p class="ph-note"><b>3 meses de gestión de Google Ads gratis</b>, que activas cuando te venga bien (en tus 6 primeros meses, mientras sigas de alta). La inversión en anuncios la pagas tú.</p>
+          <div class="gift-box">
+            <strong>🎁 Regalo: 3 meses de gestión de Google Ads (valorados en 297 €)</strong>
+            <p>El gasto en anuncios lo pone tu empresa</p>
+            <p class="gift-cond">Los activas cuando te venga bien, en tus 6 primeros meses y mientras sigas de alta.</p>
+          </div>
         </div>
 
         <ul class="checks">
@@ -451,14 +482,17 @@
         <article class="plan featured" aria-labelledby="p1">
           <h3 id="p1">Secretaria virtual IA + prueba gratis</h3>
           <p class="who">Tu teléfono atendido las 24 horas y clientes nuevos que te encuentran.</p>
+          <p class="plan-price-label">Secretaria virtual IA:</p>
           <div class="amt-block">
+            <del class="amt-old"><span class="visually-hidden">antes </span>149 €</del>
             <div class="amt">99 €<small>/mes + IVA</small></div>
           </div>
           <p class="day-price"><b>Después de 1 semana de prueba gratis.</b> El IVA va aparte.</p>
           <div class="terms"><span>1 semana gratis</span><span>Sin permanencia</span><span>Sin cuota de alta</span></div>
           <div class="gift">
-            <strong>🎁 3 meses de gestión de campaña de Google Ads gratis</strong>
-            <p>Los activas cuando te venga bien, dentro de tus 6 primeros meses y mientras sigas de alta. <b>La inversión en anuncios la pagas tú</b> directamente a Google y no está incluida en este precio.</p>
+            <strong>🎁 Regalo: 3 meses de gestión de Google Ads (valorados en 297 €)</strong>
+            <p>El gasto en anuncios lo pone tu empresa</p>
+            <p class="gift-cond">Los activas cuando te venga bien, dentro de tus 6 primeros meses y mientras sigas de alta.</p>
           </div>
           <ul>
             <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E9E5A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Atiende tu teléfono 24 horas</li>
@@ -470,7 +504,7 @@
           <a class="btn btn-o" href="#form" data-plan="Prueba gratis 1 semana + 99 €/mes + IVA + 3 meses gestión Google Ads gratis">Quiero mi prueba gratis</a>
         </article>
       </div>
-      <p class="fine">Prueba gratis de 1 semana configurada por nuestro equipo. Después, 99 €/mes + IVA. El IVA va aparte. Sin permanencia y sin cuota de alta. Los 3 meses de gestión de Google Ads gratis se activan dentro de los 6 primeros meses y mientras el cliente siga de alta; la inversión en anuncios la paga el cliente y no está incluida en el precio.</p>
+      <p class="fine">Prueba gratis de 1 semana configurada por nuestro equipo. Después, 99 €/mes + IVA (antes <del>149 €</del>). El IVA va aparte. Sin permanencia y sin cuota de alta. De regalo, 3 meses de gestión de Google Ads (valorados en 297 €), que se activan dentro de los 6 primeros meses y mientras el cliente siga de alta. El gasto en anuncios lo pone tu empresa y no está incluido en el precio.</p>
     </div>
   </section>
 
@@ -577,7 +611,7 @@
 <footer id="legal">
   <div class="w">
     <p class="fb"><b>Secretaria IA · Grupo Loang</b> · Enciende tu empresa · Loang Ediciones S.L. · NIF B84431519 · C/ Andrés Torrejón, 13, Local C, 28931 Móstoles (Madrid) · Teléfono: <a data-tel href="tel:+34639792807"><span data-phone-text>639 792 807</span></a></p>
-    <p><b>Condiciones de la oferta.</b> Prueba gratis de 1 semana configurada por Grupo Loang. Después, 99 €/mes + IVA, con 3 meses de gestión de campaña de Google Ads gratis, que el cliente activa cuando le venga bien dentro de sus 6 primeros meses y mientras siga dado de alta; la inversión en anuncios la paga el cliente y no está incluida. Sin permanencia y sin cuota de alta. El IVA va aparte. Grupo Loang no está afiliado a Google LLC.</p>
+    <p><b>Condiciones de la oferta.</b> Prueba gratis de 1 semana configurada por Grupo Loang. Después, 99 €/mes + IVA (antes 149 €), con 3 meses de gestión de campaña de Google Ads de regalo (valorados en 297 €), que el cliente activa cuando le venga bien dentro de sus 6 primeros meses y mientras siga dado de alta. El gasto en anuncios lo pone tu empresa y no está incluido. Sin permanencia y sin cuota de alta. El IVA va aparte. Grupo Loang no está afiliado a Google LLC.</p>
     <p><span class="flag">Pendiente</span><b>Protección de datos.</b> Responsable: Loang Ediciones S.L. Finalidad: atender tu solicitud y contactarte sobre este servicio. Legitimación: tu consentimiento. [Texto legal completo, destinatarios y canal para ejercer derechos por revisar.]</p>
     <p class="fl"><a href="https://grupoloang.es/aviso-legal/">Aviso legal</a> · <a href="https://grupoloang.es/politica-de-privacidad/">Política de privacidad</a> · <a href="https://grupoloang.es/politica-de-cookies">Política de cookies</a> · © 2026 Grupo Loang</p>
   </div>
